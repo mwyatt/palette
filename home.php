@@ -124,6 +124,7 @@
             });
             $('.js-mix-palette').on('click', function() {
                 $('.js-color-wrap').removeClass('selected');
+                $('.js-color-mix-count').html('0');
                 doColorLookup()
             })
             $('.js-color-wrap').on('click', function() {

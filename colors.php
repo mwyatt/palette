@@ -28,4 +28,7 @@ return [
     ['name' => 'Bonewhite', 'hex' => 'cbb893',],
     ['name' => 'Offwhite', 'hex' => 'fbefd3',],
     ['name' => 'Leather Brown', 'hex' => '7e6140',],
+    ['name' => 'Ochre Brown', 'hex' => 'ac7427',],
+    ['name' => 'Lemon Yellow', 'hex' => 'fffd18',],
+    ['name' => 'Intermediate Green', 'hex' => '488f3f',],
 ];
