@@ -10,6 +10,20 @@
             border-right: 1px solid #fff;
         }
 
+        .color-label {
+            position: relative;
+            z-index: 1;
+        }
+
+        .group-heading {
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            padding: 11px;
+            border-bottom: 1px dotted #ccc;
+            background-color: #eee;
+        }
+
         .copy-recipe {
             float: right;
         }
@@ -19,6 +33,19 @@
             width: 50%;
             font-size: 20px;
             line-height: 1;
+        }
+
+        .color-hsl {
+            color: #fff;
+                font-size: 9px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                padding: 2px;
+                font-family: arial;
+                letter-spacing: 0.6px;
         }
 
         .color-wrap {
@@ -35,6 +62,7 @@
         }
 
         .color {
+            position: relative;
             color: #fff;
             padding: 10px;
             border-radius: 3px;
@@ -75,6 +103,7 @@
         }
 
         .mix-palette {
+            z-index: 2;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -99,7 +128,7 @@
         }
 
         .wheel-container {
-            z-index: 1;
+            z-index: 3;
             position: absolute;
             top: 0;
             left: 0;
@@ -117,6 +146,7 @@
     <div class="p-2 mb-2 border-bottom text-secondary">
         <span class="btn btn-sm btn-secondary js-open-wheel float-right">Wheel</span>
         <label class="form-control-label">Order</label>
+        - <a class="" href="?order=h-grouped">Grouped</a>
         - <a class="" href="?order=hsl&order-key=0">Hue</a>
         - <a class="" href="?order=hsl&order-key=1">Saturation</a>
         - <a class="" href="?order=hsl&order-key=2">Luminance</a>
@@ -124,17 +154,22 @@
 </div>
 <div class="clearfix">
 
-    <?php foreach ($colors as $color): ?>
+    <?php if (empty($colorsGrouped)): ?>
+        <?php foreach ($colors as $color): ?>
+            <?php include('color.php') ?>
+        <?php endforeach ?>
+    <?php else: ?>
+        <?php foreach ($colorsGrouped as $group): ?>
 
-        <div class="color-wrap js-color-wrap">
-            <div class="color" style="background-color: #<?php echo $color['hex'] ?>;">
-                <div class="color-mix-count js-color-mix-count"></div>
-                <span class="color-hex js-color-hex" title="Copy to clipboard"><?php echo $color['hex'] ?></span>
-            </div>
-            <p class="color-name js-color-name"><?php echo $color['name'] ?></p>
-        </div>
+            <div class="clearfix"></div>
+            <div class="group-heading"><?php echo $group['name'] ?> (<?php echo $group['range'][0] ?> - <?php echo $group['range'][1] ?>)</div>
 
-    <?php endforeach ?>
+            <?php foreach ($group['colors'] as $color): ?>
+                <?php include('color.php') ?>
+            <?php endforeach ?>
+        <?php endforeach ?>
+    <?php endif ?>
+
 
 </div>
 <div class="js-mix-palette mix-palette">
