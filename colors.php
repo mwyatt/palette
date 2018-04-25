@@ -31,19 +31,19 @@ return [
     ['name' => 'Ochre Brown', 'hex' => 'b47827',],
     ['name' => 'Lemon Yellow', 'hex' => 'f5e708',],
     ['name' => 'Intermediate Green', 'hex' => '519947',],
+    ['name' => 'Medium Grey', 'hex' => '9ba180',],
+    ['name' => 'Hull Red', 'hex' => '5c322e',],
+    ['name' => 'Blue Violet', 'hex' => '7066a3',],
+    ['name' => 'Golden Olive', 'hex' => '7a7943',],
+    ['name' => 'Dark Sand', 'hex' => 'd4b685',],
+    ['name' => 'Brown Violet', 'hex' => '5d5747',],
+    ['name' => 'Flat Earth', 'hex' => '7d6246',],
+    ['name' => 'Olive Green', 'hex' => '4d594f',],
     
     // wishlist
-    ['name' => 'Medium Grey', 'hex' => '9ba180', 'label' => 'Wish'],
-    ['name' => 'Hull Red', 'hex' => '5c322e', 'label' => 'Wish'],
-    ['name' => 'Blue Violet', 'hex' => '7066a3', 'label' => 'Wish'],
-    ['name' => 'Golden Olive', 'hex' => '7a7943', 'label' => 'Wish'],
-    ['name' => 'Dark Sand', 'hex' => 'd4b685', 'label' => 'Wish'],
-    ['name' => 'Brown Violet', 'hex' => '5d5747', 'label' => 'Wish'],
-    ['name' => 'Flat Earth', 'hex' => '7d6246', 'label' => 'Wish'],
-    ['name' => 'Olive Green', 'hex' => '4d594f', 'label' => 'Wish'],
-    // ['name' => 'Blue Green', 'hex' => '0599a1', 'label' => 'Wish'],
 
     // idea
+    ['name' => 'Orange Brown', 'hex' => 'cb7b43', 'label' => 'Idea'],
     // ['name' => 'Middlestone', 'hex' => '9e8857', 'label' => 'Idea'],
     // ['name' => 'Emerald', 'hex' => '08976b', 'label' => 'Idea'],
     // ['name' => 'Light Green Blue', 'hex' => '7ca59d', 'label' => 'Idea'],
