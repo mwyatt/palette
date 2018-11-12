@@ -39,11 +39,20 @@ return [
     ['name' => 'Brown Violet', 'hex' => '5d5747',],
     ['name' => 'Flat Earth', 'hex' => '7d6246',],
     ['name' => 'Olive Green', 'hex' => '4d594f',],
+    ['name' => 'Mephiston Red', 'hex' => '991115'],
+    ['name' => 'Tallarn Flesh', 'hex' => '9f8088'],
     
     // wishlist
 
     // idea
-    ['name' => 'Orange Brown', 'hex' => 'cb7b43', 'label' => 'Idea'],
+    ['name' => 'Orange Brown', 'hex' => 'cb7b43', 'label' => 'Coming'],
+    ['name' => 'Dark Yellow', 'hex' => '91834c', 'label' => 'Coming'],
+    ['name' => 'Sunny Skintone', 'hex' => 'e9aa74', 'label' => 'Coming'],
+    ['name' => 'Filthy Brown', 'hex' => 'f18e11', 'label' => 'Coming'],
+    ['name' => 'Japanese Uniform', 'hex' => '9d7b3c', 'label' => 'Idea'],
+    ['name' => 'Scrofulous Brown', 'hex' => 'd47e1c', 'label' => 'Idea'],
+    ['name' => 'Brown Sand', 'hex' => '9d755c', 'label' => 'Idea'],
+    ['name' => 'Light Sea Grey', 'hex' => 'a5b7b7', 'label' => 'Idea'],
     // ['name' => 'Middlestone', 'hex' => '9e8857', 'label' => 'Idea'],
     // ['name' => 'Emerald', 'hex' => '08976b', 'label' => 'Idea'],
     // ['name' => 'Light Green Blue', 'hex' => '7ca59d', 'label' => 'Idea'],
